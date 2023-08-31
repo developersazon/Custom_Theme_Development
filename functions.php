@@ -11,8 +11,7 @@
 // Create Custom Menus
 register_nav_menus(
     array(
-        'main_menu' => 'Top Menu',
-        'side_menu' => 'Side Menu'
+        'main_menu' => 'Primary Menu',
 
     )
 )
