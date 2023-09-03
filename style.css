@@ -8,3 +8,12 @@ Description: Twenty Twenty-Three is designed to take advantage of the new design
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 The
 */
+
+/* header section design start her */
+  .navbar-nav li {
+    margin: 0  20px;
+  }
+
+  .navbar-nav li a {
+    color:white;
+  }
