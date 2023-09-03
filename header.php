@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/mdb.min.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/style.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/style.css" />
 </head>
 <body>
         <!--Main Navigation-->
@@ -31,7 +32,7 @@
       </style>
 
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block sticky-top" style="z-index: 2000;">
+      <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block sticky-top">
         <div class="container-fluid">
           <!-- Navbar brand -->
           <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
@@ -43,22 +44,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarExample01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#intro">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
-                  target="_blank">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Contact</a>
-              </li>
+               <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_class' => 'navbar-nav')) ?>
             </ul>
 
             <ul class="navbar-nav d-flex flex-row">
