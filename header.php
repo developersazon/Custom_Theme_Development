@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Custom Design</title>
+    <title>Custom Teheme Development</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
@@ -16,100 +16,117 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/style.css" />
 </head>
 <body>
-        <!--Main Navigation-->
+      <!--Main Navigation-->
     <header>
-      <style>
-        /* Height for devices larger than 576px */
-        @media (min-width: 992px) {
-          #intro {
-            margin-top: -58.59px;
-          }
-        }
-
-        .navbar .nav-link {
-          color: #fff !important;
-        }
-      </style>
-
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
         <div class="container-fluid">
-          <!-- Navbar brand -->
-          <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
-            <strong>LWSAZON</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <i class="fas fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="<?php site_url(); ?>">
+              <img
+                src="<?php bloginfo('template_directory');?>/img/logo.png"
+                height="25"
+                alt="My Website Logo"
+                loading="lazy"
+              />
+            </a>
+            <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_class' => 'navbar-nav')) ?>
+                <?php wp_nav_menu( array( 'theme_location' => 'main_menu', 'menu_class' => 'navbar-nav')) ?>
             </ul>
-
-            <ul class="navbar-nav d-flex flex-row">
-              <!-- Icons -->
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
-                  target="_blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-            </ul>
+            <!-- Left links -->
           </div>
-        </div>
-      </nav>
-      <!-- Navbar -->
+          <!-- Collapsible wrapper -->
 
-      <!-- Background image -->
-      <div id="intro" class="bg-image vh-100 shadow-1-strong">
-        <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
-          <source class="h-100" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-        </video>
-        <div class="mask"     style="
-        background: linear-gradient(
-          45deg,
-          rgba(29, 236, 197, 0.7),
-          rgba(91, 14, 214, 0.7) 100%
-        );
-      ">
-          <div class="container d-flex align-items-center justify-content-center text-center h-100">
-            <div class="text-white">
-              <h1 class="mb-3">Learn WordPress Step by Step</h1>
-              <h5 class="mb-4">Best & free guide of responsive web design</h5>
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <!-- Notifications -->
+            <div class="dropdown">
               <a
-                class="btn btn-outline-light btn-lg m-2"
-                href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                class="text-reset me-3 dropdown-toggle hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuLink"
                 role="button"
-                rel="nofollow"
-                target="_blank"
-                >Get Started</a
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
               >
+                <i class="fas fa-bell"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Some news</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another news</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Avatar -->
+            <div class="dropdown">
               <a
-                class="btn btn-outline-light btn-lg m-2"
-                href="https://mdbootstrap.com/docs/standard/"
-                target="_blank"
+                class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuAvatar"
                 role="button"
-                >Download Now</a
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
               >
+                <img
+                  src="https://avatars.githubusercontent.com/u/123007780?v=4"
+                  class="rounded-circle"
+                  height="25"
+                  alt="Black and White Portrait of a Man"
+                  loading="lazy"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuAvatar"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">My profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
             </div>
           </div>
+          <!-- Right elements -->
         </div>
-      </div>
-      <!-- Background image -->
+        <!-- Container wrapper -->
+      </nav>
+
+      <!-- Navbar -->
     </header>
