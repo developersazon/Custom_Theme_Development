@@ -1,6 +1,54 @@
-<!-- hearder section start here -->
-<?php get_header() ?>
-<!-- header section end here -->
+
+  <?php get_header() ?>
+
+  <!-- page banner section start here -->
+  <style>
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #home_pageIntro {
+            margin-top: -58.59px;
+            height: 100vh !important;
+          }
+        }
+
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+    </style>
+
+  <!-- Background image -->
+  <div id="home_pageIntro" class="bg-image vh-100 shadow-1-strong">
+        <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
+          <source class="h-100"
+            src="https://mdbootstrap.com/img/video/animation-intro-min.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="mask" style="
+              background: linear-gradient(
+                45deg,
+                rgba(29, 236, 197, 0.7),
+                rgba(91, 14, 214, 0.7) 100%
+              );
+            ">
+          <div class="container d-flex align-items-center h-100">
+            <div class="text-white">
+            <h2 class="">Welcome to the <?php the_title(); ?> page</h2>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="<?php site_url(); ?>">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><?php the_title(); ?></li>
+                    </ol>
+                  </nav>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- page banner section end here -->
 
     <!--Main layout-->
     <main class="mt-5">
