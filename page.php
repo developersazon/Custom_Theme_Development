@@ -19,7 +19,7 @@
 <div id="intro" class="bg-image vh-100 shadow-1-strong">
       <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
         <source class="h-100"
-          src="https://mdbootstrap.com/img/video/animation-intro-min.mp4"
+          src="https://mdbootstrap.com/img/video/Lines.mp4"
           type="video/mp4"
         />
       </video>
@@ -30,19 +30,32 @@
               rgba(91, 14, 214, 0.7) 100%
             );
           ">
-        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+        <div class="container d-flex align-items-center h-100">
           <div class="text-white">
-            <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-            <h5 class="mb-4">Best & free guide of responsive web design</h5>
-            <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button"
-              rel="nofollow" target="_blank">Start tutorial</a>
-            <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank"
-              role="button">Download MDB UI KIT</a>
+          <h2 class="">Welcome to the <?php the_title(); ?> page</h2>
+          <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<?php site_url(); ?>">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?php the_title(); ?></li>
+                  </ol>
+                </nav>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
     </div>
     <!-- Background image -->
+
+   <div id="section">
+    <div class="container">
+      <div class="col"> 
+         <h2 class="my-5">Hello World</h2>
+      </div>
+    </div>
+   </div>
   
  <!-- page banner section end here -->
 
