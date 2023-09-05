@@ -1,13 +1,12 @@
 
   <?php get_header() ?>
-
-  <!-- page banner section start here -->
-  <style>
+    
+  <!-- page banner design section starrt here -->
+    <style>
         /* Height for devices larger than 576px */
         @media (min-width: 992px) {
-          #home_pageIntro {
+          #intro {
             margin-top: -58.59px;
-            height: 100vh !important;
           }
         }
 
@@ -15,40 +14,43 @@
           color: #fff !important;
         }
     </style>
+    <!-- page banner design section end here -->
 
-  <!-- Background image -->
-  <div id="home_pageIntro" class="bg-image vh-100 shadow-1-strong">
+    <!-- page banner section start here -->
+    <div id="intro" class="bg-image vh-100 shadow-1-strong">
         <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
-          <source class="h-100"
-            src="https://mdbootstrap.com/img/video/animation-intro-min.mp4"
-            type="video/mp4"
-          />
+          <source class="h-100" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
         </video>
-        <div class="mask" style="
-              background: linear-gradient(
-                45deg,
-                rgba(29, 236, 197, 0.7),
-                rgba(91, 14, 214, 0.7) 100%
-              );
-            ">
-          <div class="container d-flex align-items-center h-100">
-            <div class="text-white">
-            <h2 class="">Welcome to the <?php the_title(); ?> page</h2>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="<?php site_url(); ?>">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page"><?php the_title(); ?></li>
-                    </ol>
-                  </nav>
-                </div>
-              </nav>
+        <div class="mask"     style="
+        background: linear-gradient(
+          45deg,
+          rgba(29, 236, 197, 0.7),
+          rgba(91, 14, 214, 0.7) 100%
+        );
+      ">
+          <div class="container d-flex align-items-center justify-content-center text-center h-100">
+            <div class="text-white" style="font-family: 'Assistant', sans-serif;">
+              <h1 class="mb-3">Learn Something New !</h1>
+              <h5 class="mb-4">“If you are not willing to learn, no one can help you.<br> If you are determined to learn, no one can stop you.”—Zig Ziglar</h5>
+              <a
+                class="btn btn-outline-light btn-rounded btn-xl m-2"
+                href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+                >Get Started</a
+              >
+              <a
+                class="btn btn-outline-light btn-rounded btn-xl m-2"
+                href="http://localhost/lwsazon/contact/"
+                role="button"
+                >Contact Now</a
+              >
             </div>
           </div>
         </div>
       </div>
-  <!-- page banner section end here -->
+    <!-- page banner section end here -->
 
     <!--Main layout-->
     <main class="mt-5">
