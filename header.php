@@ -14,12 +14,16 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/style.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/style.css" />
+    <!-- Custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
       <!--Main Navigation-->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg" style="z-index: 2000;">
         <!-- Container wrapper -->
         <div class="container-fluid">
           <!-- Toggle button -->
@@ -58,7 +62,7 @@
           <div class="d-flex align-items-center">
             <!-- Icon -->
             <a class="text-reset me-3" href="#">
-              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-shopping-cart text-light"></i>
             </a>
 
             <!-- Notifications -->
@@ -71,7 +75,7 @@
                 data-mdb-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="fas fa-bell"></i>
+                <i class="fas fa-bell text-light"></i>
                 <span class="badge rounded-pill badge-notification bg-danger">1</span>
               </a>
               <ul
