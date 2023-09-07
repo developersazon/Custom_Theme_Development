@@ -18,6 +18,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+       .navbar-nav li a {
+        color: white !important;
+       }
+
+       @media (min-width: 992px) {
+        .navbar-nav {
+          color:red !important;
+        }
+      }
+    </style>
 </head>
 <body>
       <!--Main Navigation-->
@@ -42,9 +53,10 @@
           <!-- Collapsible wrapper -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Navbar brand -->
+            <?php $websoite_logo = get_header_image(); ?>
             <a class="navbar-brand mt-2 mt-lg-0" href="<?php site_url(); ?>">
               <img
-                src="<?php bloginfo('template_directory');?>/img/logo.png"
+                src="<?php echo $websoite_logo; ?>"
                 height="25"
                 alt="My Website Logo"
                 loading="lazy"
