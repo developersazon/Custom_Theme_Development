@@ -9,10 +9,6 @@
             margin-top: -58.59px;
           }
         }
-
-        .navbar .nav-link {
-          color: #fff !important;
-        }
     </style>
     <!-- page banner design section end here -->
 
