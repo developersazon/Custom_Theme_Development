@@ -9,10 +9,6 @@
           height: 50vh !important;
         }
       }
-
-      .navbar .nav-link {
-        color: #fff !important;
-      }
   </style>
 
 <!-- Background image -->
@@ -36,9 +32,9 @@
           <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<?php site_url(); ?>">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><?php the_title(); ?></li>
+                  <ol class="breadcrumb bg-light px-3 py-1 rounded-pill">
+                    <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>">Home</a></li>
+                    <li class="breadcrumb-item active text-success" aria-current="page"><?php the_title(); ?></li>
                   </ol>
                 </nav>
               </div>
