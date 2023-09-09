@@ -23,7 +23,7 @@
               rgba(29, 236, 197, 0.7),
               rgba(91, 14, 214, 0.7) 100%
             );
-          ">
+          ">  
         <div class="container d-flex align-items-center justify-content-center h-100">
           <div class="text-white shadow-2-strong p-4 rounded">
           <h2 class="">Welcome to the <?php the_title(); ?> page</h2>
@@ -32,7 +32,7 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb bg-light px-3 py-1 rounded-pill">
                     <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>">Home</a></li>
-                    <li class="breadcrumb-item active text-success" aria-current="page"><?php the_title(); ?></li>
+                    <li class="breadcrumb-item text-primary" aria-current="page"><?php the_title(); ?></li>
                   </ol>
                 </nav>
               </div>
