@@ -21,13 +21,13 @@
               <div class="address">
                 <i class="far fa-map"></i>
                 <h4>Location:</h4>
-                <p>Mirpur-1 Dhaka, Bangladesh</p>
+                <p>Mirpur Dhaka, Bangladesh</p>
               </div>
 
               <div class="email">
                 <i class="fas fa-envelope"></i>
                 <h4>Email:</h4>
-                <p>sazon@aamarpay.com</p>
+                <p>contact@sazonmahmud.net</p>
               </div>
 
               <div class="phone">
