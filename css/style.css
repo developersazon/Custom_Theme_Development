@@ -1,12 +1,12 @@
 /* 
-Theme Name: Learn With Sazon
-Author: Sazon Mahmud
-Author URI: https://www.sazonmahmud.net
-Version: 1.1.0
-Description: Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+  Theme Name: Learn With Sazon
+  Author: Sazon Mahmud
+  Author URI: https://www.sazonmahmud.net
+  Version: 1.1.0
+  Description: Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
 
-Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
-The
+  Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+  The
 */
 
 /* header section design start her */
@@ -15,13 +15,17 @@ The
     color: white !important;
   }
 
+  .current-menu-item a, .current-menu-item a {
+    color: red; 
+    padding: 15px;
+    border-bottom: 2px solid white;
+  }
   /* Height for devices larger than 576px */
   @media (min-width: 992px) {
     #intro {
       margin-top: -58.59px;
     }
   }
-
 
   /*--------------------------------------------------------------
     Contact section start here
