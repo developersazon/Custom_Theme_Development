@@ -26,7 +26,7 @@
           ">  
         <div class="container d-flex align-items-center justify-content-center h-100">
           <div class="text-white shadow-2-strong p-4 rounded">
-          <h2 class="">Welcome to the <?php the_title(); ?> page</h2>
+          <h2 class="">Welcome to the <?php wp_title(); ?> page</h2>
           <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
                 <nav aria-label="breadcrumb">

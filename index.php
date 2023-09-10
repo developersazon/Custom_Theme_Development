@@ -12,36 +12,26 @@
             <!-- left side content start here-->
             <div class="col-md-8 col-lg-8 d-flex">
                 <!-- card 1 start here -->
+                <?php while(have_posts() ) { 
+                    
+                    the_post();
+                    $banner_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+                ?>
                 <div class="card m-3">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/banner.png" class="img-fluid"/>
+                        <img src="<?php echo $banner_image[0]; ?>" class="img-fluid"/>
                         <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h6 class="card-title"><?php the_title(); ?></h6>
+                        <p class="card-text"><?php the_excerpt(); ?></p>
                         <a href="#!" class="btn btn-primary-outline">Read More</a>
                     </div>
                 </div>
                 <!-- card 1 end here -->
-
-                 <!-- card 2 start here -->
-                 <div class="card m-3">
-                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/banner.png" class="img-fluid"/>
-                        <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#!" class="btn btn-primary-outline">Read More</a>
-                    </div>
-                </div>
-                <!-- card 2 end here -->
+                <?php } ?>
                 
             </div>
             <!-- left side content end here-->
