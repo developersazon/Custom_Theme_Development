@@ -124,5 +124,7 @@
     <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/script.js"></script>
+    <!-- add for plugins element -->
+    <?php wp_footer(); ?>
 </body>
 </html>
