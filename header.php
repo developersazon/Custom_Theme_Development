@@ -17,17 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-       .navbar-nav li a {
-        color: white !important;
-       }
-
-       @media (min-width: 992px) {
-        .navbar-nav {
-          color:red !important;
-        }
-      }
-    </style>
 </head>
 <body>
       <!--Main Navigation-->
