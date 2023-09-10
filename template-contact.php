@@ -1,8 +1,8 @@
-<?php /* Template Name: Contact Page */
-      get_header(); 
-      require_once 'banner.php';
+<?php
+    //Template Name:Template - Contact Page
+           get_header(); 
+           require_once 'banner.php';
 ?>
-
 
 
 <!-- Contact section start here -->
