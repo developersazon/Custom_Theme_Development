@@ -25,30 +25,34 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h6 class="card-title"><?php the_title(); ?></h6>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="bg-light py-2 rounded-pill">User Name</h6>
+                            <h6 class="bg-light py-2 rounded-pill"><?php the_date(); ?></h6>
+                        </div>
+                        <h6 class="card-title text-primary my-1"><?php the_title(); ?></h6>
                         <p class="card-text"><?php the_excerpt(); ?></p>
                         <a href="#!" class="btn btn-primary-outline">Read More</a>
                     </div>
                 </div>
-                <!-- card 1 end here -->
                 <?php } ?>
-                
+                <!-- card 1 end here -->
             </div>
             <!-- left side content end here-->
 
             <!-- Right side content start here -->
             <div class="col-md-4 col-lg-4 shadow-3 rounded">
-                 <div class="card">
-                    <p class="h5 text-center">Right Sidebar</p><hr>
+                 <div class="card my-4">
+                    <p class="h5 py-2 text-center">Recent Posts</p>
                  </div>
             </div>
             <!-- Right side content end here -->
+
+            <!-- For pagination  -->
+            <P><?php wp_pagenavi(); ?></p>
         </div>
     </div>
 </div>
 <!-- Blog Section end here -->
-
-
 
 
 <!-- ============== Start Footer ===================== -->
