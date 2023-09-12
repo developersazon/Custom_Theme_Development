@@ -31,7 +31,7 @@
                         </div>
                         <h6 class="card-title text-primary my-1"><?php the_title(); ?></h6>
                         <p class="card-text"><?php the_excerpt(); ?></p>
-                        <a href="#!" class="btn btn-primary-outline">Read More</a>
+                        <a href="<?php the_permalink(); ?>" class="btn btn-primary-outline">Read More</a>
                     </div>
                 </div>
                 <?php } ?>
