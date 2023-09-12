@@ -17,16 +17,14 @@
                 <div class="card m-3">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                         <img src="<?php echo $banner_image[0]; ?>" class="img-fluid"/>
-                        <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
                     </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
                             <h6 class="bg-light py-2 rounded-pill"><?php the_author(); ?></h6>
                             <h6 class="bg-light py-2 rounded-pill"><?php the_date(); ?></h6>
                         </div>
-                        <h6 class="card-title text-primary my-1"><?php the_title(); ?></h6>
+                        <h4 class="card-title text-primary my-1"><?php the_title(); ?></h4>
                         <p class="card-text"><?php the_content(); ?></p>
                     </div>
                 </div>
