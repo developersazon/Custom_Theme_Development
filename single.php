@@ -42,6 +42,7 @@
 
             <!-- For pagination  -->
             <P><?php wp_pagenavi(); ?></p>
+            <?php comment_form(); ?>
         </div>
     </div>
 </div>
