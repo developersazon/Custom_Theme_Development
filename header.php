@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/mdb.min.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/style.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/style.css" />
     <!-- Custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
