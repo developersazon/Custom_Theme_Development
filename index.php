@@ -29,7 +29,7 @@
                             <h6 class="bg-light py-2 rounded-pill"><?php the_author(); ?></h6>
                             <h6 class="bg-light py-2 rounded-pill"><?php the_date(); ?></h6>
                         </div>
-                        <h6 class="card-title text-primary my-1"><?php the_title(); ?></h6>
+                        <a href="<?php the_permalink(); ?>"><h6 class="card-title text-primary my-1"><?php the_title(); ?></h6></a>
                         <p class="card-text"><?php the_excerpt(); ?></p>
                         <a href="<?php the_permalink(); ?>" class="btn btn-primary-outline">Read More</a>
                     </div>
@@ -41,8 +41,15 @@
 
             <!-- Right side content start here -->
             <div class="col-md-4 col-lg-4 shadow-3 rounded">
-                 <div class="card my-4">
-                    <p class="h5 py-2 text-center">Recent Posts</p>
+                 <div class="card p-3">
+                      <p class="h4 py-2 text-center text-white bg-primary rounded-pill">Recent Posts</p>
+                    <?php while(have_posts()) { 
+                          the_post();
+                    ?>
+                      <a href="<?php the_permalink(); ?>">
+                         <p class="h6 my-2"> <?php the_title(); ?> </p>
+                      </a>
+                    <?php } ?>
                  </div>
             </div>
             <!-- Right side content end here -->
