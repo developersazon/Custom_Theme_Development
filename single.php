@@ -7,7 +7,6 @@
 <!-- Blog Section start here -->
 <div id="blog" class="my-5">
     <div class="container">
-        <p class="h2 py-2">Our Latest Blogs</p>
         <div class="row">
             <!-- left side content start here-->
             <div class="col-md-8 col-lg-8 d-flex">
@@ -48,7 +47,7 @@
 
             <!-- For pagination  -->
             <P><?php wp_pagenavi(); ?></p>
-            <?php comment_form(); ?>
+            <?php comments_template(); ?>
         </div>
     </div>
 </div>
