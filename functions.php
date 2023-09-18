@@ -25,11 +25,6 @@ add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 
 
-register_siderbar (
-    array(
-        'name' => "Sidebar Location",
-        'id' => 'sidebar'
-    )
- );
+ 
 
 ?>
