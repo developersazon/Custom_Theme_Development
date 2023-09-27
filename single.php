@@ -33,14 +33,7 @@
             <!-- Right side content start here -->
             <div class="col-md-4 col-lg-4 shadow-3 rounded">
                  <div class="card p-3">
-                      <p class="h4 py-2 text-center text-white bg-primary rounded-pill">Recent Posts</p>
-                    <?php while(have_posts()) { 
-                          the_post();
-                    ?>
-                      <a href="<?php the_permalink(); ?>">
-                         <p class="h6 my-2"> <?php the_title(); ?> </p>
-                      </a>
-                    <?php } ?>
+                       <?php dynamic_sidebar('sidebarblog'); ?>
                  </div>
             </div>
             <!-- Right side content end here -->
