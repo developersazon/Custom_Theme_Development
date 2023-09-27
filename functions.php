@@ -28,8 +28,8 @@ add_theme_support('post-thumbnails');
 //  Create custome sidebar 
 register_sidebar(
     array(
-        'name' => 'Blog Sidebar',
-        'id' => 'Primary Sidebar'
+        'name' => "Blog Sidebar",
+        'id' => "sidebarblog"
     )
 );
 
