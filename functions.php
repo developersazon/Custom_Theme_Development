@@ -25,6 +25,12 @@ add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 
 
- 
+//  Create custome sidebar 
+register_sidebar(
+    array(
+        'name' => 'Blog Sidebar',
+        'id' => 'Primary Sidebar'
+    )
+);
 
 ?>
