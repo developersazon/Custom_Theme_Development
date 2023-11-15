@@ -33,4 +33,7 @@ register_sidebar(
     )
 );
 
+
+
+add_theme_support('custom-background');
 ?>
