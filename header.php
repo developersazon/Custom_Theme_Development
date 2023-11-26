@@ -66,15 +66,15 @@
           <div class="d-flex align-items-center">
             <!-- Icon -->
             <a class="text-reset me-3" href="#">
-              <i class="fab fa-facebook-square text-light"></i>
+              <i class="fab fa-facebook-square text-light fa-2x"></i>
             </a>
             <a class="text-reset me-3" href="#">
-               <i class="fab fa-twitter-square text-light"></i>
+               <i class="fab fa-twitter-square text-light fa-2x"></i>
             <a class="text-reset me-3" href="#">
-               <i class="fab fa-github-square text-light"></i>
+               <i class="fab fa-github-square text-light fa-2x"></i>
             </a>
             <a class="text-reset me-3" href="#">
-               <i class="fab fa-youtube-square text-light"></i>
+               <i class="fab fa-youtube-square text-light fa-2x"></i>
             </a>
           </div>
           <!-- Right elements -->
