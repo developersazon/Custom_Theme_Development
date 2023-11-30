@@ -128,8 +128,13 @@
                           <div class="card p-2">
                                 <h4>Latest Posts</h4>
                           </div><br>
-                          <!-- search section end here -->
+                          <!-- search section end here -->       
 
+                          <!-- search section start here -->
+                          <div class="card p-2">
+                                <h4>Post Tags</h4>
+                          </div><br>
+                          <!-- search section end here -->
                       </div>
                 </div>
             </div>
