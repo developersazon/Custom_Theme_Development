@@ -1,8 +1,6 @@
   <?php 
       //Template Name: Template - Homepage
-      get_header() 
-  
-  
+      get_header();
   ?>
     
   <!-- page banner design section starrt here -->
@@ -56,69 +54,6 @@
     <main class="mt-5">
       <div class="container">
         <!--Section: Content-->
-        <section>
-          <div class="row">
-               <div class="col-md-8 gx-5 mb-4">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
-                      <div class="carousel-indicators">
-                        <button
-                          type="button"
-                          data-mdb-target="#carouselExampleCaptions"
-                          data-mdb-slide-to="0"
-                          class="active"
-                          aria-current="true"
-                          aria-label="Slide 1"
-                        ></button>
-                        <button
-                          type="button"
-                          data-mdb-target="#carouselExampleCaptions"
-                          data-mdb-slide-to="1"
-                          aria-label="Slide 2"
-                        ></button>
-                        <button
-                          type="button"
-                          data-mdb-target="#carouselExampleCaptions"
-                          data-mdb-slide-to="2"
-                          aria-label="Slide 3"
-                        ></button>
-                      </div>
-                      <div class="carousel-inner">
-                         <?php while(have_posts()) { 
-                            
-                            get_the_post();
-                            $banner_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
-                         ?>
-                        <div class="carousel-item active">
-                          <img src="<?php echo $banner_image[0]; ?>" class="d-block w-100" alt="Wild Landscape"/>
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5><?php echo the_title(); ?></h5>
-                            <p><?php the_excerpt(); ?></p>
-                          </div>
-                        </div>
-                        <?php } ?>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                </div>
-
-                <div class="col-md-4 gx-5 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
-                    <img src="https://mdbootstrap.com/img/new/slides/031.jpg" class="img-fluid" />
-                    <a href="#!">
-                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                    </a>
-                  </div>
-                </div>
-          </div>
-        </section>
-        <!--Section: Content-->
 
         <hr class="my-5" />
 
@@ -168,27 +103,33 @@
                 </div>
               </div>
             </div>
+            
 
+            <!-- Sidebar section colum start here -->
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img
-                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
-                    class="img-fluid"
-                  />
-                  <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                  </a>
+               <div class="row">
+                    <div class="col-md-12">
+
+                          <!-- search section start here -->
+                          <div class="card p-2">
+                               <div class="input-group">
+                                    <div class="form-outline" data-mdb-input-init>
+                                         <input type="search" id="form1" class="form-control" />
+                                         <label class="form-label" for="form1">Search</label>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" data-mdb-ripple-init>
+                                            <i class="fas fa-search"></i>
+                                    </button>
+                               </div>
+                          </div><hr>
+                          <!-- search section end here -->
+
+
+                      </div>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                </div>
-              </div>
             </div>
+            <!-- Sidebar section colum end here -->
+
           </div>
         </section>
         <!--Section: Content-->
