@@ -1,13 +1,15 @@
 <?php
 
-    // function load_scripts(){
-    //     wp_enqueue_style( 'bootstrap-css', bloginfo('template_directory') . 'css/mdb.min.css', array(), '6.4.1', 'all');
-    //     wp_enqueue_scripts( 'bootstrap-js', bloginfo('template_directory') . 'js/mdb.min.js', array('query'), '6.4.1', true);
-        
-    // }
-    // add_action('wp_enqueue_scripts', 'load_scripts'); 
+   function stylesheet_files(){
+      wp_enqueue_style('main_css_file', get_stylesheet_directory_uri() . '/css/style.css');
+      wp_enqueue_style('main_bootstrap_file', get_stylesheet_directory_uri(). '/css/mdb.min.css');
+      wp_enqueue_style('font', get_stylesheet_directory_uri(). 'https://use.fontawesome.com/releases/v5.11.2/css/all.css');
+   }
+   add_action('wp_enqueue_scripts', 'stylesheet_files');
 
+?>
 
+<?php 
 // custom menu start here
 register_nav_menus(
     array(
