@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php wp_head(); ?>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -12,15 +13,13 @@
     <!-- MDB -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/mdb.min.css" />
     <!-- Custom styles -->
-    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/style.css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/style.css" />
+
     <!-- Custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Kenia&display=swap" rel="stylesheet">
     <!-- for add plugins element -->
-    <?php wp_head(); ?>
 </head>
 <body>
       <!--Main Navigation-->
