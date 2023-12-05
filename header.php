@@ -7,12 +7,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title> <?php bloginfo('name'); ?> <?php wp_title(); ?> <?php if (is_front_page()) { echo "|| "; bloginfo('description'); } ?></title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <!-- MDB -->
-    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/mdb.min.css" />
-    <!-- Custom styles -->
 
     <!-- Custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
