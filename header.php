@@ -5,19 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title> <?php bloginfo('name'); ?> <?php wp_title(); ?> <?php if (is_front_page()) { echo "|| "; bloginfo('description'); } ?></title>
+    <title></title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="" />
     <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
-    <!-- MDB -->
 
-    <!-- Custom fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Kenia&display=swap" rel="stylesheet">
-    <!-- for add plugins element -->
 </head>
 <body>
       <!--Main Navigation-->
