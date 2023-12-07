@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
     <?php wp_head(); ?>
-    <meta charset="UTF-8" />
+    <meta charset="<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title></title>
@@ -11,7 +11,7 @@
     <!-- Google Fonts Roboto -->
 
 </head>
-<body>
+<body <?php body_class() ?>>
       <!--Main Navigation-->
     <header>
       <!-- Navbar -->
