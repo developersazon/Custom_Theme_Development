@@ -10,7 +10,19 @@
 
 // theme title & tag setup function start here
    function website_titletag() {
-      add_theme_support ('title-tag');
+     
+    //use for custom title & tag setup
+     add_theme_support ('title-tag');
+
+      //custom header function start here
+     add_theme_support('custom-header');
+
+     //create custom thumbnail for post page
+     add_theme_support('post-thumbnails');
+
+    //add new support for background image
+     add_theme_support('custom-background');
+
    }
    add_action('after_setup_theme', 'website_titletag');
 // theme title & tag setup function edn here
@@ -28,13 +40,6 @@ register_nav_menus(
 //custom menu end here
 
 
-//custom header function start here
-add_theme_support('custom-header');
-
-//create custom thumbnail for post page
-add_theme_support('post-thumbnails');
-
-
 //  Create custome sidebar 
 register_sidebar(
     array(
@@ -44,6 +49,4 @@ register_sidebar(
 );
 
 
-
-add_theme_support('custom-background');
 ?>
