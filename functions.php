@@ -1,7 +1,7 @@
 <?php
 
    function stylesheet_files(){
-      wp_enqueue_style('main_css_file', get_stylesheet_directory_uri() . '/css/style.css');
+      wp_enqueue_style('main_css_file', get_stylesheet_directory_uri() . '/style.css');
       wp_enqueue_style('bootstrap_js_file', get_stylesheet_directory_uri() . '/css/mdb.min.css');
       wp_enqueue_style('font-owesome', get_stylesheet_directory_uri(). 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css');
    }
@@ -34,7 +34,10 @@
 register_nav_menus(
     array(
         'main_menu' => 'Primary Menu',
-
+        'footer_one' => 'Footer Colum 1',
+        'footer_two' => 'Footer Colum 2',
+        'footer_three' => 'Footer Colum 3',
+        'footer_four' => 'Footer Colum 4',
     )
     );
 //custom menu end here
