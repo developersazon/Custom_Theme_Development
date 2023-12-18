@@ -1,6 +1,7 @@
 <?php 
     get_header();
     require_once 'banner.php';
+    have_posts();
  ?>
 <!-- ============== End Header ===================== -->
 
@@ -19,10 +20,11 @@
                     </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
-                            <h6 class="bg-light py-2 rounded-pill"><?php the_author(); ?></h6>
-                            <h6 class="bg-light py-2 rounded-pill"><?php the_date(); ?></h6>
+                            
+                            <h6 class="bg-light py-2 rounded-pill"><?php echo get_the_date(); ?></h6>
                         </div>
                         <h4 class="card-title text-primary my-1"><?php the_title(); ?></h4>
+                        <h6 class="bg-light py-2 rounded-pill"><?php echo the_author(); ?></h6>
                         <p class="card-text"><?php the_content(); ?></p>
                     </div>
                 </div>
