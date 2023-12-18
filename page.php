@@ -10,7 +10,8 @@
    <div id="section">
     <div class="container">
       <div class="col my-5"> 
-           <h1><?php bloginfo('home'); ?></h1>
+           <h4 class="fw-bold"><?php the_title(); ?></h4 class="Blod">
+           <p><?php the_content(); ?></p>
     </div>
    </div>
    <?php } ?>
