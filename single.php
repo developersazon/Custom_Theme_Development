@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <!-- left side content start here-->
-            <div class="col-md-8 col-lg-8 d-flex">
+            <div class="col-md-8 col-lg-8">
                 <!-- card 1 start here -->
                 <?php $banner_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large'); ?>
                 <div class="card m-3">
@@ -39,7 +39,7 @@
             <!-- Right side content end here -->
 
             <!-- For pagination  -->
-            <P><?php wp_pagenavi(); ?></p>
+            <P><?php echo paginate_links(); ?></p>
             <?php comments_template(); ?>
         </div>
     </div>
