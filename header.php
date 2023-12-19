@@ -5,6 +5,8 @@
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- Material Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <title></title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="" />
@@ -35,7 +37,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Navbar brand -->
             <?php $websoite_logo = get_header_image(); ?>
-            <a class="navbar-brand mt-2 mt-lg-0" href="<?php site_url(); ?>">
+            <a class="navbar-brand mt-2 mt-lg-0" href="<?php home_url(); ?>">
               <img
                 src="<?php echo $websoite_logo; ?>"
                 height="25"
