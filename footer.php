@@ -42,7 +42,7 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Learn With Sazon
+                <img src="img/logo.png" alt="website-logo">Learn With Sazon
             </h6>
             <p>
               Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -81,7 +81,6 @@
               info@example.com
             </p>
             <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
           </div>
           <!-- Grid column -->
         </div>
